@@ -50,3 +50,4 @@ gem "puma"
 gem "foreman"
 
 gem "devise"
+gem 'postmark-rails'
