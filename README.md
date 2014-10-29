@@ -23,7 +23,7 @@ Beekepers (are Users)  and they have an "Apiary".
 =======
 
 The webpage should have an endpoint where the hivewing enabled device is redirected to.
-'www.hivewing.io / workers / new ? worker_uid=XXXXXXXXXXXXXXXXXXXX`
+'www.hivewing.io / workers / new / XXXXXXXXXXXXXXXXXXXX'
 (can have a user_auth_token and a hive id -- for automated deployments - the system can hit that URL directly).
 
 That is going to be a place where we either add it to the logged in user's apiary, or it gets added to a hive/apiary automagically.

@@ -1,3 +1,6 @@
 class Worker < ActiveRecord::Base
-  belongs_to :hives
+  include HasGuid
+
+  belongs_to :hive
+  belongs_to :apiary
 end

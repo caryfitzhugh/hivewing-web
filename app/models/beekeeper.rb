@@ -4,4 +4,6 @@ class Beekeeper < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
           :confirmable, :lockable,
           :recoverable, :rememberable, :trackable, :validatable
+  has_one :apiary
+  has_many :hives, :through => :hive_beekeepers
 end
