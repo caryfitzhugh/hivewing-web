@@ -8,6 +8,6 @@ module HasGuid
   protected
 
   def generate_guid
-    self.guid = SecureRandom.uuid if self.guid.empty?
+    self.guid = SecureRandom.uuid if self.guid.blank?
   end
 end
