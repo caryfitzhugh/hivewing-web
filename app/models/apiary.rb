@@ -1,5 +1,5 @@
 class Apiary < ActiveRecord::Base
   belongs_to :beekeeper
-  has_one :apiary
-  has_many :hives, :through => :hive_beekeepers
+  has_one :apiary, :class => Apiary
+  has_many :workers
 end

@@ -5,6 +5,7 @@ class Beekeeper < ActiveRecord::Base
           :confirmable, :lockable,
           :recoverable, :rememberable, :trackable, :validatable
   has_one :apiary
+  has_many :hive_beekeepers, :class_name => "HiveBeekeepers"
   has_many :hives, :through => :hive_beekeepers
 
   def is_admin?
