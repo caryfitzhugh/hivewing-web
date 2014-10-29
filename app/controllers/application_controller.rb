@@ -6,7 +6,11 @@ class ApplicationController < ActionController::Base
 
   protected
 
+  def authenticate_admin_beekeeper!
+    requires_admin!
+  end
+
   def  requires_admin!
-    current_beekeper.is_admin?
+    current_beekeeper && current_beekeeper.is_admin?
   end
 end

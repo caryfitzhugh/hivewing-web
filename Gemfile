@@ -51,3 +51,5 @@ gem "foreman"
 
 gem "devise"
 gem 'postmark-rails'
+
+gem 'activeadmin', github: 'activeadmin'
