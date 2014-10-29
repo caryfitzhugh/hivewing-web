@@ -6,4 +6,8 @@ class Beekeeper < ActiveRecord::Base
           :recoverable, :rememberable, :trackable, :validatable
   has_one :apiary
   has_many :hives, :through => :hive_beekeepers
+
+  def is_admin?
+    self.role == 'admin'
+  end
 end
